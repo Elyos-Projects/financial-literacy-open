@@ -1,0 +1,33 @@
+{
+  "id": "financial-literacy-open-glossary-008",
+  "title": "Glossary v1 (budgeting terms; cited, jurisdiction-flagged)",
+  "project": "financial-literacy-open",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "financial-literacy", "oer", "glossary", "plain-language"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "A plain-language glossary of money terms supports learners who encounter unfamiliar terminology in the curriculum lessons. The glossary v1 covers terms introduced in the Budgeting-basics module. Each definition must be cited to an authoritative open source, flagged where jurisdiction-specific, free of product/brand references, and reviewed by the credentialed financial educator. Jurisdiction-specific terms (e.g., account types, regulatory terms) are labeled with their jurisdiction rather than presented as universal.",
+  "objective": "Write and publish Glossary v1 covering budgeting-related money terms: plain-language definitions, each cited to an authoritative open source, with jurisdiction flags where applicable and notAdviceFraming framing.",
+  "acceptanceCriteria": [
+    "Covers all key terms introduced in the Budgeting-basics module (task 007) with plain-language definitions at or below grade 8 readability",
+    "Each definition is cited to at least one authoritative, openly-licensed source from the vetted source registry (task 006)",
+    "Jurisdiction-specific terms are clearly labeled with their jurisdiction (ISO country code or 'neutral'); no universal claims for jurisdiction-specific concepts",
+    "Linter-clean: no product/brand/affiliate references; persistent 'Educational information, not financial advice' framing where applicable",
+    "Glossary schema conforms to the content JSON Schema (task 004): sources[], reviewer, jurisdiction flags, notAdviceFraming, license",
+    "Credentialed financial-educator sign-off recorded for the shipped version"
+  ],
+  "resources": [
+    "PLAN.md",
+    "tasks/financial-literacy-open-sources-006.json",
+    "tasks/financial-literacy-open-content-007.json"
+  ],
+  "output": "A reviewed, signed-off Glossary v1 (content/glossary/glossary-v1.mdx or structured data) covering budgeting terms with citations, jurisdiction flags, and conforming metadata.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

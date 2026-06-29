@@ -1,0 +1,34 @@
+{
+  "id": "financial-literacy-open-print-015",
+  "title": "Printable worksheets / one-pagers (offline, B/W + screen-reader friendly)",
+  "project": "financial-literacy-open",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "financial-literacy", "oer", "accessibility", "printables", "offline"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Many learners access educational materials offline or in low-bandwidth settings, or work with facilitators who print materials for in-person sessions. Printable worksheets and one-pagers derived from the curriculum source enable these use cases without requiring internet access. They must be usable in black-and-white (no color-dependent information), screen-reader/tagged-PDF friendly for learners using assistive technology, and carry the not-advice framing. They are generated from the same MDX source as the curriculum lessons to ensure consistency.",
+  "objective": "Design and implement printable worksheet and one-pager templates for the core curriculum modules: offline-friendly, B/W-printable, tagged-PDF accessible, and rendered from the same source as the curriculum.",
+  "acceptanceCriteria": [
+    "Printable worksheets and one-pagers are generated from the same MDX source as the curriculum lessons (single source of truth)",
+    "Usable in black-and-white: no information conveyed by color alone; all charts/diagrams readable in B/W",
+    "Screen-reader and tagged-PDF friendly: PDF/UA or WCAG PDF accessibility; headings, lists, and figures properly tagged",
+    "Each printable carries 'Educational information, not financial advice' framing and the non-commercial redirect pointer; linter-clean (no product/brand content)",
+    "Plain-language review passed; readability at or below grade 8 for foundational worksheets",
+    "Build process documented: how to generate PDFs from source (e.g., via the static-site generator or a PDF rendering step)"
+  ],
+  "resources": [
+    "PLAN.md",
+    "tasks/financial-literacy-open-content-007.json",
+    "tasks/financial-literacy-open-content-010.json",
+    "tasks/financial-literacy-open-content-011.json"
+  ],
+  "output": "A merged PR adding printable worksheet and one-pager templates (print/) generated from the curriculum source, with B/W + accessibility requirements met and the build process documented.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

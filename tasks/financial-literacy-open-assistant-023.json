@@ -1,0 +1,35 @@
+{
+  "id": "financial-literacy-open-assistant-023",
+  "title": "Gated live learner-facing Q&A assistant (full guardrail port)",
+  "project": "financial-literacy-open",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["education", "financial-literacy", "oer", "ai", "safety", "guardrails", "privacy"],
+  "riskTier": "high",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "A live learner-facing Q&A assistant is backlog-only and explicitly scoped out at launch. It would require porting the full editorial/product-neutrality/not-advice guardrail layer to a runtime LLM endpoint — a much higher safety bar than the authoring-only AI usage. The assistant must refuse individualized advice, investment/crypto/tax/legal questions, product recommendations, and affiliate/lead-gen requests in every interaction; every refusal must emit a correct non-commercial redirect. It must never collect or transmit a learner's personal financial data. This task requires a governance decision before starting and is gated on all core curriculum and QA tasks being complete.",
+  "objective": "Design, implement, and safety-review a gated live learner-facing Q&A assistant with the full guardrail layer ported to a runtime LLM endpoint — including refusal handling, non-commercial redirects, privacy controls, and a red-team evaluation — pending a governance decision to proceed.",
+  "acceptanceCriteria": [
+    "Governance decision to proceed is recorded before any implementation begins; the decision includes a safety and scope assessment",
+    "The assistant refuses and correctly redirects (to free nonprofit counselor / public consumer-finance agency, never a commercial product) for all refused-use categories: individualized financial advice, investment/crypto/forex/retirement-allocation advice, product/brand recommendations, affiliate/lead-gen requests, tax/legal/accounting/insurance/bankruptcy advice, and get-rich/MLM/'credit-repair' schemes",
+    "A failing refusal (one that does not emit a correct non-commercial redirect, or that provides prohibited advice) is a QA failure at the same severity as a product-neutrality linter violation",
+    "The assistant never collects, transmits, or stores a learner's personal financial data; no learner financial inputs go to any backend or logging system",
+    "Red-team evaluation (adversarial prompts for advice-elicitation, product-steering, and data extraction) passes before release",
+    "Runtime guardrail layer (refusal rules, denylist, non-commercial redirect) is maintained separately from the authoring-only AI usage and is independently auditable"
+  ],
+  "resources": [
+    "PLAN.md",
+    "CLAUDE.md",
+    "tasks/financial-literacy-open-policy-001.json",
+    "tasks/financial-literacy-open-linter-003.json",
+    "tasks/financial-literacy-open-qa-017.json"
+  ],
+  "output": "A merged PR (pending governance approval) adding a gated live learner-facing Q&A assistant with the full runtime guardrail layer, privacy controls, and a passing red-team evaluation report.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

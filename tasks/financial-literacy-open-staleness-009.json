@@ -1,0 +1,33 @@
+{
+  "id": "financial-literacy-open-staleness-009",
+  "title": "Provenance + citation-coverage + staleness fail-safe enforcement",
+  "project": "financial-literacy-open",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "financial-literacy", "oer", "engineering", "provenance", "staleness"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Financial figures, rates, thresholds, and statistics decay over time. A common failure mode is a figure silently going stale — still served as current while the underlying data has changed. The project's staleness fail-safe makes this a visible, gated event: each source's lastVerified/validUntil fields drive an automated check that flags or withholds any claim past its validUntil date until re-verified and re-signed-off. Citation coverage enforcement ensures no claim ships without an attached source. Together these form the runtime provenance guardrails.",
+  "objective": "Implement and wire into CI: (1) a citation-coverage check that fails if any claim lacks an attached source, and (2) a staleness fail-safe that auto-flags or withholds any time-sensitive figure served past its validUntil date until re-verified and re-signed-off.",
+  "acceptanceCriteria": [
+    "Citation-coverage check: no lesson or glossary entry can ship (CI passes) with an uncited factual claim; coverage check runs as part of `pnpm test` or `pnpm validate`",
+    "Staleness check: for every source with a validUntil date, CI flags (or withholds from the build output) any claim where today's date exceeds validUntil — not silently served as current",
+    "The staleness flag triggers a re-verification and re-sign-off requirement before the claim can be re-published; the process is documented",
+    "Sign-off is version-scoped: edits to a lesson invalidate its current sign-off and require re-review before re-publishing",
+    "Staleness test suite asserts that a claim with a past validUntil is correctly flagged and not served",
+    "Check is runnable locally and produces actionable output identifying which claim/source is stale or uncited"
+  ],
+  "resources": [
+    "PLAN.md",
+    "tasks/financial-literacy-open-schema-004.json",
+    "tasks/financial-literacy-open-sources-006.json"
+  ],
+  "output": "A merged PR adding the citation-coverage check and staleness fail-safe scripts (scripts/check-citations.ts and scripts/check-staleness.ts) wired into CI, with a test suite and documentation.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

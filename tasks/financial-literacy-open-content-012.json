@@ -1,0 +1,35 @@
+{
+  "id": "financial-literacy-open-content-012",
+  "title": "Banking/accounts-basics module (generic, product-neutral)",
+  "project": "financial-literacy-open",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "financial-literacy", "oer", "banking", "accessibility", "plain-language", "product-neutrality"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The Banking/accounts-basics module covers how banks, credit unions, and basic account types work in generic, product-neutral terms — explaining what these institutions and accounts are, how they function, and what questions to ask, without naming or recommending specific institutions, apps, or products. This is particularly important for unbanked and underbanked learners who are often targeted by predatory financial-service providers. The module is gated on the Budgeting module being complete and a credentialed reviewer being engaged.",
+  "objective": "Draft, cite, plain-language review, accessibility review, linter-clean, and credentialed-expert-sign-off the Banking/accounts-basics module explaining account types, banking institutions, and basic banking concepts in strictly product-neutral, generic terms.",
+  "acceptanceCriteria": [
+    "Explains account types (checking, savings, etc.), how banks and credit unions work, basic banking concepts, and questions to ask — without naming or recommending specific institutions, apps, or products",
+    "Includes unbanked/underbanked framing: acknowledges barriers to banking access without shaming; notes existence of public/nonprofit banking access options without recommending specific products",
+    "All factual and numeric claims cited to vetted openly-licensed authoritative sources; jurisdiction-specific account types or regulations labeled with their jurisdiction",
+    "Linter-clean: no product/brand names, no institution recommendations, no affiliate patterns; 'Educational information, not financial advice' framing and non-commercial redirect present",
+    "Readability at or below grade 8; plain-language review passed; WCAG 2.2 AA met; a11y review passed",
+    "MDX frontmatter conforms to the content JSON Schema: sources[], reviewer, reviewedVersion, signoffDate, jurisdiction='neutral', notAdviceFraming:true, license=CC-BY-4.0",
+    "Credentialed financial-educator sign-off and product-neutrality reviewer sign-off recorded for the shipped version; strings externalized for i18n"
+  ],
+  "resources": [
+    "PLAN.md",
+    "tasks/financial-literacy-open-policy-001.json",
+    "tasks/financial-literacy-open-content-007.json",
+    "tasks/financial-literacy-open-staleness-009.json"
+  ],
+  "output": "A reviewed, signed-off Banking/accounts-basics module (content/lessons/banking-basics.mdx) with full provenance metadata, linter-clean, accessible, plain-language, and translation-ready.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

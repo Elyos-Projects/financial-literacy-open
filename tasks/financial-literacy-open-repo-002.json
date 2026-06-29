@@ -1,0 +1,33 @@
+{
+  "id": "financial-literacy-open-repo-002",
+  "title": "Monorepo + pnpm + TS/ESM + static-site toolchain + CI (build/test/lint) skeleton",
+  "project": "financial-literacy-open",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "financial-literacy", "oer", "engineering", "toolchain"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Financial-Literacy-Open is an openly-licensed, plain-language curriculum and privacy-preserving toolkit (TypeScript + ESM, pnpm workspaces, static-site generator). Before any content or tooling tasks can run, the repository needs a working monorepo scaffold: pnpm workspace, TS/ESM build, a static-site generator (e.g., Astro), and a CI pipeline (build, test, lint). This is the infrastructure foundation that all subsequent tasks depend on. There is no delivery partner or credentialed reviewer yet secured.",
+  "objective": "Initialize the pnpm monorepo with TS/ESM configuration, a static-site generator skeleton, and a CI pipeline (GitHub Actions) that runs build, test, and lint to a green state — establishing the engineering foundation for all subsequent tasks.",
+  "acceptanceCriteria": [
+    "pnpm workspace is configured with packages for policy/, schema/, content/, tools/, site/, and scripts/",
+    "TypeScript + ESM build configuration is present and `pnpm build` succeeds with no errors",
+    "A static-site generator (e.g., Astro or equivalent) skeleton renders a placeholder home page",
+    "`pnpm test` and `pnpm lint` pass on the skeleton (even with no substantive tests yet)",
+    "GitHub Actions CI workflow runs on push/PR and all steps pass (build, test, lint)",
+    "No secrets, tokens, or PII are committed; dependency scanning is included in CI",
+    "MIT license file present for code; CC-BY-4.0 notice placeholder present for content"
+  ],
+  "resources": [
+    "PLAN.md",
+    "CLAUDE.md"
+  ],
+  "output": "A merged PR adding the pnpm monorepo scaffold, TS/ESM + static-site toolchain, and green CI pipeline — the engineering foundation for all M0+ tasks.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

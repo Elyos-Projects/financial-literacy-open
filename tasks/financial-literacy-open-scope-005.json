@@ -1,0 +1,32 @@
+{
+  "id": "financial-literacy-open-scope-005",
+  "title": "Launch jurisdiction-scope decision (neutral core confirmed; overlay criteria + deadline)",
+  "project": "financial-literacy-open",
+  "type": "research",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "financial-literacy", "oer", "governance", "jurisdiction", "research"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "One of the most common failure modes of financial-literacy content is presenting one country's money system as universal (e.g., US credit scores, 401(k)s, UK ISAs) without labeling. The project must decide its launch jurisdiction scope in M0 — before any content is authored — to prevent this. The default is a jurisdiction-neutral core. The question is whether and which single jurisdiction overlay to add at launch, and this decision must be grounded in open-source availability, credentialed local reviewer availability, audience size, and tractable complexity.",
+  "objective": "Research and record the M0 jurisdiction-scope decision: confirm jurisdiction-neutral core as the default launch scope, define the criteria and M0 deadline for selecting a first overlay jurisdiction, and document the decision rationale in governance/.",
+  "acceptanceCriteria": [
+    "Confirms jurisdiction-neutral core as the launch scope with a clear rationale recorded",
+    "Defines the four scoring criteria for choosing a first overlay jurisdiction: (1) availability of public-domain/openly-licensed authoritative sources, (2) availability of a local credentialed reviewer, (3) size of an underserved, low-literacy audience reachable via a partner, (4) tractable consumer-finance complexity",
+    "Records that the specific overlay jurisdiction remains 'TO BE SECURED' pending a local reviewer, and sets the M0 decision deadline (2026-08-31 per PLAN.md)",
+    "Identifies candidate overlay jurisdictions ranked by the four criteria, with notes on open-source availability and reviewer availability for each candidate",
+    "Document is reviewed and approved by the maintainer (and the credentialed financial educator when engaged)"
+  ],
+  "resources": [
+    "PLAN.md",
+    "CLAUDE.md",
+    "tasks/financial-literacy-open-policy-001.json"
+  ],
+  "output": "A governance document (governance/jurisdiction-scope-decision.md) recording the jurisdiction-neutral core decision, overlay scoring criteria, candidate jurisdictions, and M0 deadline — the rule and deadline are fixed; the specific overlay remains TO BE SECURED.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

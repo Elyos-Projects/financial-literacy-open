@@ -1,0 +1,34 @@
+{
+  "id": "financial-literacy-open-sources-006",
+  "title": "Source vetting: verify reuse terms + record provenance for budgeting sources",
+  "project": "financial-literacy-open",
+  "type": "data",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "financial-literacy", "oer", "provenance", "licensing", "research"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Every factual claim in the curriculum must be backed by an authoritative, openly-reusable source with verified reuse terms — public domain (e.g., U.S. federal works), CC-BY, CC-BY-SA, or equivalent — and recorded provenance including license/legal-status, retrieval date, lastVerified, and validUntil. Commercial finance content and proprietary rate/product/comparison data are categorically excluded. This vetting task covers the sources needed for the M1 Budgeting module and must be completed and expert-signed-off before content drafting begins.",
+  "objective": "Identify, vet, and record provenance for all authoritative, openly-licensed sources needed for the Budgeting-basics module, producing a machine-readable source registry entry for each source with verified reuse terms and staleness fields.",
+  "acceptanceCriteria": [
+    "At least 3 authoritative open sources for budgeting basics are identified (e.g., government consumer-finance agencies, nonprofit financial-counseling bodies, OER repositories) with public-domain or open-license status confirmed",
+    "Reuse terms verified and recorded per source: source name, publisher, jurisdiction, citation, URL, retrieval date, license/legal-status note, lastVerified, and validUntil",
+    "No all-rights-reserved commercial finance content; no commercial rate/product/comparison data included",
+    "CC-BY-SA sources are tagged for share-alike inheritance so they are segregated/labeled correctly in the curriculum",
+    "Source registry entries conform to the content/lesson JSON Schema (task 004) sources[] format",
+    "Expert sign-off (credentialed financial educator) recorded before sources are enabled for content use"
+  ],
+  "resources": [
+    "PLAN.md",
+    "CLAUDE.md",
+    "tasks/financial-literacy-open-schema-004.json",
+    "tasks/financial-literacy-open-scope-005.json"
+  ],
+  "output": "A machine-readable source registry (data/sources/budgeting-sources.json) with verified provenance records for all budgeting-module sources, conforming to the sources[] schema and ready for citation in content tasks.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

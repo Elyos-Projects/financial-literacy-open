@@ -1,0 +1,34 @@
+{
+  "id": "financial-literacy-open-funded-024",
+  "title": "Funded reviewer-hours lane (hard budget cap) for credentialed review",
+  "project": "financial-literacy-open",
+  "type": "maintenance",
+  "lane": "funded",
+  "priority": "low",
+  "domain": ["education", "financial-literacy", "oer", "governance", "funding", "review"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Securing and retaining a credentialed financial-educator reviewer (AFC or equivalent) is a hard gate for all M1+ content. In the volunteer model, reviewer availability may become a bottleneck. A funded lane for reviewer hours — with a hard budget cap and strict commercial-disinterest rules — could unblock the content pipeline while preserving the independence that is the project's trust moat. The reviewer must have no financial interest in any product the content could touch and must disclose affiliations; the funded lane must not become a mechanism for a reviewer tied to commercial interests to influence content. This task designs and documents the funded reviewer-hours model.",
+  "objective": "Design and document a funded reviewer-hours lane that enables compensating a credentialed financial-educator reviewer within a hard budget cap, with strict independence and COI rules that preserve the project's commercial-disinterest trust moat.",
+  "acceptanceCriteria": [
+    "Funded lane model documented: budget cap (hard ceiling, not a guideline), payment mechanism, scope of compensated hours (sign-off review only, not content authoring), and audit trail",
+    "Independence and COI rules defined: reviewer must disclose all financial affiliations; a reviewer with a financial interest in any product the curriculum could touch is ineligible; COI check is recorded per reviewer engagement",
+    "Funded lane does not alter the reviewer's veto rights or sign-off authority; the expert still holds a veto on substance and may not be overridden by the maintainer",
+    "Governance decision on the funded model is recorded, including how it interfaces with Elyos's funded lane escrow and cost ledger",
+    "No funded reviewer compensation creates a financial dependency that compromises the project's categorical no-affiliate/no-sponsorship rule",
+    "Document is approved by Elyos governance before the funded lane is activated"
+  ],
+  "resources": [
+    "PLAN.md",
+    "CLAUDE.md",
+    "tasks/financial-literacy-open-policy-001.json"
+  ],
+  "output": "A governance document (governance/funded-reviewer-lane.md) defining the funded reviewer-hours model with budget cap, COI rules, independence safeguards, and Elyos governance sign-off — prerequisite before any funded reviewer hours are authorized.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0",
+  "fundedBudgetUsd": 500
+}

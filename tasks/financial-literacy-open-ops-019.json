@@ -1,0 +1,32 @@
+{
+  "id": "financial-literacy-open-ops-019",
+  "title": "Ops runbook + outcomes dashboard (aggregate/anonymous) + maintenance rotation + content review cadence",
+  "project": "financial-literacy-open",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "financial-literacy", "oer", "operations", "sustainability", "governance"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Financial content has a real decay rate: rates, thresholds, statistics, and examples change over time. After pilot delivery, the project needs durable maintenance structures: a runbook for the pipeline and site, an outcomes dashboard tracking aggregate/anonymous measures (not engagement vanity metrics), a named maintenance rotation, and a content review cadence enforced at runtime by the staleness fail-safe. Adding a jurisdiction overlay or a new language must follow a reviewer-gated process. These structures make the project sustainably maintained as an OER artifact.",
+  "objective": "Write the ops runbook, set up the anonymous aggregate outcomes dashboard, establish the named maintenance rotation, and define the runtime-enforced content review cadence and reviewer-gated expansion process.",
+  "acceptanceCriteria": [
+    "Ops runbook covers: build/deploy process, source re-verification steps, linter/denylist updates, partner-support contacts, and emergency procedures",
+    "Outcomes dashboard tracks comprehension gain, money-action counts, reviewer/linter CI status, and staleness flag counts — all aggregate and anonymous; no engagement vanity metrics (no page-view counters as primary metrics)",
+    "Named maintenance rotation documented with at least two named maintainers and a succession plan",
+    "Content review cadence defined: each source type has a maximum validUntil interval; the staleness fail-safe runtime enforcement is documented; re-verification and re-sign-off process is clear",
+    "Reviewer-gated expansion process documented: how to add a jurisdiction overlay (requires a local credentialed reviewer) or a new language (requires a language reviewer and financial-educator review)",
+    "Runbook and dashboard are public (CC-BY-4.0) and stored in governance/ or docs/"
+  ],
+  "resources": [
+    "PLAN.md",
+    "tasks/financial-literacy-open-pilot-018.json"
+  ],
+  "output": "A merged PR adding the ops runbook (governance/ops-runbook.md), outcomes dashboard setup (scripts/dashboard/ or a static dashboard), maintenance rotation record, content review cadence documentation, and expansion process guide.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

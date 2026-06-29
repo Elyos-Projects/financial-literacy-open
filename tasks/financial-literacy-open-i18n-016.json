@@ -1,0 +1,35 @@
+{
+  "id": "financial-literacy-open-i18n-016",
+  "title": "i18n: externalize strings + translate core curriculum into 2 or more pilot languages (each language-reviewed)",
+  "project": "financial-literacy-open",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "financial-literacy", "oer", "i18n", "accessibility", "translation"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "translation",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "A core audience for this curriculum is recent immigrants, refugees, and ESL learners who may be more comfortable in a language other than English. Translations make the curriculum accessible to these learners through partner organizations (e.g., refugee-resettlement programs). The pilot languages will be determined by the secured delivery partner's audience; this task first externalizes all strings to make translation possible, then produces translations into at least 2 pilot languages, each reviewed by both a language reviewer and a financial educator for accuracy. Translations are CC-BY-4.0 (or CC-BY-SA-4.0 where inherited) and credit translators.",
+  "objective": "Externalize all curriculum strings into i18n resource files and produce reviewed translations of the core curriculum into at least 2 pilot languages, each language-reviewed for both linguistic accuracy and financial-content accuracy.",
+  "acceptanceCriteria": [
+    "All learner-facing strings in the core curriculum are externalized into i18n resource files (e.g., JSON/YAML per language) — no hardcoded strings in components",
+    "Core curriculum (Budgeting, Saving, Debt, Banking, Scams modules + Glossary) translated into at least 2 pilot languages, with language selection driven by the secured delivery partner's audience",
+    "Each translation is reviewed by a language reviewer for linguistic accuracy and by a financial educator for financial-concept accuracy; reviews recorded per language per version",
+    "Translations inherit CC-BY-4.0 (or CC-BY-SA-4.0 where the source is share-alike); translators credited in the translators ledger with consent",
+    "Not-advice framing and non-commercial redirect are preserved and correctly translated in every language version",
+    "i18n build pipeline produces a language-selectable static site; language switching does not require a page reload or backend"
+  ],
+  "resources": [
+    "PLAN.md",
+    "tasks/financial-literacy-open-content-010.json",
+    "tasks/financial-literacy-open-content-011.json",
+    "tasks/financial-literacy-open-content-012.json",
+    "tasks/financial-literacy-open-content-013.json"
+  ],
+  "output": "A merged PR adding i18n string externalization and reviewed translations of the core curriculum in at least 2 pilot languages (content/i18n/), with a language-selectable static site build and translator credits.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}
