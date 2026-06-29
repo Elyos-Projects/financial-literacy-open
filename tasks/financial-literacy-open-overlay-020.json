@@ -1,0 +1,34 @@
+{
+  "id": "financial-literacy-open-overlay-020",
+  "title": "First jurisdiction overlay (credit reporting / account types / consumer rights)",
+  "project": "financial-literacy-open",
+  "type": "data",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["education", "financial-literacy", "oer", "jurisdiction", "consumer-protection", "provenance"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "The jurisdiction-neutral core does not cover country-specific money systems. A jurisdiction overlay adds clearly-labeled, locally-reviewed country-specific notes on topics like credit reporting, account types, and consumer-protection rights for a single jurisdiction — chosen by the criteria defined in the scope-decision document (task 005). The overlay is strictly additive and labeled, never presented as universal. It requires a local credentialed reviewer for that jurisdiction and full source vetting for jurisdiction-specific sources. The overlay jurisdiction is TO BE SECURED pending a local reviewer.",
+  "objective": "Research, source-vet, draft, and get local-expert sign-off on the first jurisdiction overlay covering credit reporting, account types, and consumer-protection rights for the selected jurisdiction, as a labeled, clearly-additive overlay to the neutral core.",
+  "acceptanceCriteria": [
+    "Overlay jurisdiction is chosen by the four criteria from task 005 and approved by the maintainer; specific jurisdiction is TO BE SECURED pending a local credentialed reviewer",
+    "Overlay covers credit reporting, basic account types, and consumer-protection rights for the specific jurisdiction — clearly labeled as jurisdiction-specific, never presented as universal",
+    "All sources are authoritative, openly-licensed, and jurisdiction-appropriate (e.g., national consumer-finance agency, central bank, nonprofit); reuse terms verified and recorded per source",
+    "Linter configured to allow jurisdiction-specific terms only inside labeled overlay sections; linter-clean across the overlay",
+    "Local credentialed reviewer (financial educator or consumer-finance professional for that jurisdiction) sign-off recorded for the shipped version",
+    "Overlay data conforms to the content JSON Schema with jurisdiction set to the ISO country code; CC-BY-SA inheritance handled if applicable"
+  ],
+  "resources": [
+    "PLAN.md",
+    "tasks/financial-literacy-open-scope-005.json",
+    "tasks/financial-literacy-open-schema-004.json",
+    "tasks/financial-literacy-open-linter-003.json"
+  ],
+  "output": "A reviewed, locally-expert-signed-off jurisdiction overlay dataset (data/overlays/<jurisdiction-code>/) with source records, labeled overlay content, and linter configuration — additive to the neutral core.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

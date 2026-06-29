@@ -1,0 +1,35 @@
+{
+  "id": "financial-literacy-open-content-010",
+  "title": "Saving-basics module (emergency-buffer concept; cited, expert-signed-off)",
+  "project": "financial-literacy-open",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "financial-literacy", "oer", "saving", "accessibility", "plain-language"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The Saving-basics module is part of the M2 core curriculum, building on the Budgeting-basics module. It explains saving fundamentals — including the emergency-buffer concept — in plain, non-judgmental language. The module must acknowledge structural barriers to saving (low wages, medical debt) without blaming or shaming learners, cite all claims to openly-licensed authoritative sources, and never recommend specific savings products, interest rates, or institutions. It is gated on the Budgeting module (task 007) being complete and a credentialed reviewer being engaged.",
+  "objective": "Draft, cite, plain-language review, accessibility review, linter-clean, and credentialed-expert-sign-off the Saving-basics module covering saving fundamentals and the emergency-buffer concept, with structurally-honest framing that acknowledges barriers without shaming.",
+  "acceptanceCriteria": [
+    "Covers saving fundamentals and the emergency-buffer concept with labeled illustrative examples; never recommends a specific savings amount, account type, product, or institution",
+    "Structurally honest: acknowledges that structural barriers (low wages, medical debt) affect saving capacity; never implies saving failure is a personal moral failing",
+    "All factual and numeric claims cited to vetted openly-licensed authoritative sources; numbers shown as labeled examples with currency shown neutrally",
+    "Linter-clean: no product/brand/affiliate/advice phrasing; no unflagged jurisdiction-specific terms; 'Educational information, not financial advice' framing and non-commercial redirect present",
+    "Readability at or below grade 8; plain-language review passed; WCAG 2.2 AA met; a11y review passed",
+    "MDX frontmatter conforms to the content JSON Schema: sources[], reviewer, reviewedVersion, signoffDate, jurisdiction='neutral', notAdviceFraming:true, license=CC-BY-4.0",
+    "Credentialed financial-educator sign-off recorded for the shipped version; strings externalized for i18n"
+  ],
+  "resources": [
+    "PLAN.md",
+    "tasks/financial-literacy-open-policy-001.json",
+    "tasks/financial-literacy-open-content-007.json",
+    "tasks/financial-literacy-open-staleness-009.json"
+  ],
+  "output": "A reviewed, signed-off Saving-basics module (content/lessons/saving-basics.mdx) with full provenance metadata, linter-clean, accessible, plain-language, and translation-ready.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

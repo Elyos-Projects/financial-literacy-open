@@ -1,0 +1,35 @@
+{
+  "id": "financial-literacy-open-linter-003",
+  "title": "Product-neutrality + not-advice linter (brand/affiliate/ticker/advice-phrasing/unflagged-jurisdiction + non-shaming flags) wired into CI",
+  "project": "financial-literacy-open",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "financial-literacy", "oer", "engineering", "product-neutrality", "consumer-protection"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The project's core trust moat is commercial disinterest: it never recommends financial products, never carries affiliate links, and never gives individualized advice. This linter is the automated enforcement mechanism — the content analog of a red-team suite — that scans all Markdown/MDX content for policy violations and fails the CI build on any finding. It must implement the rules defined in the editorial policy charter (task 001) and be wired into CI before any content is authored. Without this gate, the product-neutrality and not-advice properties cannot be verified at scale.",
+  "objective": "Build and wire into CI a product-neutrality + not-advice linter that detects brand/product/institution names, ticker symbols, affiliate/referral URL patterns, advice phrasing, unflagged jurisdiction-specific terms, and non-shaming violations — and fails the build on any finding.",
+  "acceptanceCriteria": [
+    "Detects and fails CI on: product/brand/institution names (curated denylist + heuristics), ticker symbols, affiliate/referral URL and UTM/lead-gen patterns, and advice phrasing ('you should buy/invest/choose', 'the best card/bank/broker is', guaranteed-return claims)",
+    "Flags unflagged jurisdiction-specific terms ('credit score', '401(k)', 'ISA', 'NHS', etc.) that appear outside a clearly-labeled overlay — these are a lint warning that fails CI",
+    "Emits non-shaming heuristic flags (blame/moralizing phrasing of poverty or debt) for human review — does not fail CI silently",
+    "Verifies presence of the 'Educational information, not financial advice' framing and a non-commercial redirect on every learner-facing surface; a missing or commercial redirect is a CI failure",
+    "Runs in CI as part of `pnpm lint`; all denylist patterns and rules are versioned, documented, and extensible",
+    "Linter is runnable locally and produces actionable output (file, line, rule name, suggested fix hint)",
+    "Passes the editorial policy charter (task 001) as its authoritative rule source"
+  ],
+  "resources": [
+    "PLAN.md",
+    "CLAUDE.md",
+    "tasks/financial-literacy-open-policy-001.json",
+    "tasks/financial-literacy-open-repo-002.json"
+  ],
+  "output": "A merged PR adding the product-neutrality + not-advice linter (TypeScript/ESM) wired into CI via `pnpm lint`, with documented denylist patterns, versioned rules, and a test suite covering all detection categories.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

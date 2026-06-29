@@ -1,0 +1,35 @@
+{
+  "id": "financial-literacy-open-content-011",
+  "title": "Debt-basics module (interest/principal/compounding/prioritization/cost of borrowing)",
+  "project": "financial-literacy-open",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "financial-literacy", "oer", "debt", "accessibility", "plain-language", "consumer-protection"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "The Debt-basics module is the most risk-sensitive content module: it must explain interest, principal, compounding, debt prioritization, and the cost of borrowing clearly and accurately while never recommending specific loans, 'good debt' purchases, or debt-settlement services. Learners in debt distress must be routed to free nonprofit counseling — never to commercial debt-settlement or 'credit-repair' services, which are a predatory product category. This module is gated on a credentialed reviewer being engaged and the Budgeting module being complete.",
+  "objective": "Draft, cite, plain-language review, accessibility review, linter-clean, and credentialed-expert-sign-off the Debt-basics module covering interest, principal, compounding, prioritization, and cost of borrowing — with debt-distress routing to free nonprofit help only.",
+  "acceptanceCriteria": [
+    "Explains interest, principal, compounding, and debt prioritization with labeled illustrative examples; never recommends a specific loan, lender, or 'good debt' purchase",
+    "Debt-distress content routes learners to free nonprofit financial counseling (e.g., NFCC member agencies, nonprofit credit counselors) — never to commercial debt-settlement, 'credit-repair', or debt-consolidation services",
+    "All factual and numeric claims cited to vetted openly-licensed authoritative sources; numbers shown as labeled examples; currency shown neutrally",
+    "Linter-clean: no product/brand/affiliate/advice phrasing; no unflagged jurisdiction-specific terms (e.g., specific regulatory limits labeled by jurisdiction); 'Educational information, not financial advice' framing and non-commercial redirect present",
+    "Readability at or below grade 8; plain-language review passed; WCAG 2.2 AA met; a11y review passed",
+    "MDX frontmatter conforms to the content JSON Schema: sources[], reviewer, reviewedVersion, signoffDate, jurisdiction='neutral', notAdviceFraming:true, license=CC-BY-4.0",
+    "Credentialed financial-educator sign-off recorded for the shipped version; strings externalized for i18n"
+  ],
+  "resources": [
+    "PLAN.md",
+    "tasks/financial-literacy-open-policy-001.json",
+    "tasks/financial-literacy-open-content-007.json",
+    "tasks/financial-literacy-open-staleness-009.json"
+  ],
+  "output": "A reviewed, signed-off Debt-basics module (content/lessons/debt-basics.mdx) with full provenance metadata, linter-clean, accessible, plain-language, and translation-ready.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

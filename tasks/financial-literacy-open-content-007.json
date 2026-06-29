@@ -1,0 +1,36 @@
+{
+  "id": "financial-literacy-open-content-007",
+  "title": "Budgeting-basics module (cited, plain-language, accessible, neutral, expert-signed-off)",
+  "project": "financial-literacy-open",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "financial-literacy", "oer", "budgeting", "accessibility", "plain-language"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "The Budgeting-basics module is the M1 proof-of-pipeline: it validates the entire workflow (policy charter, linter, schema, provenance, expert review) end-to-end before the rest of the curriculum is built. It must teach budgeting fundamentals in plain, non-judgmental language at or below grade 8 readability, cite every factual claim to an openly-licensed authoritative source, pass the product-neutrality linter, and receive credentialed financial-educator sign-off before shipping. No delivery partner is yet secured; this task is gated on a credentialed reviewer being engaged (M1 kill-gate).",
+  "objective": "Draft, cite, plain-language review, accessibility review, linter-clean, and credentialed-expert-sign-off the Budgeting-basics module — the first reviewed lesson in the curriculum, proving the full pipeline end-to-end.",
+  "acceptanceCriteria": [
+    "All factual and numeric claims are cited to an authoritative, openly-licensed source from the vetted source registry (task 006); numbers shown as labeled illustrative examples, never recommendations or benchmarks; currency shown neutrally",
+    "Linter-clean: no product/brand/affiliate/advice phrasing; no unflagged jurisdiction-specific terms; persistent 'Educational information, not financial advice' framing and a non-commercial redirect (nonprofit counselor / public consumer-finance agency) present on every learner-facing surface",
+    "Readability target met: core lessons at or below grade 8 (target grade 6 for foundational content); plain-language review passed",
+    "WCAG 2.2 AA accessibility requirements met; a11y review passed",
+    "Credentialed financial-educator sign-off (AFC or equivalent) recorded in the reviewers ledger, version-scoped to the shipped version",
+    "MDX frontmatter conforms to the content JSON Schema (task 004): sources[], reviewer, reviewedVersion, signoffDate, jurisdiction='neutral', notAdviceFraming:true, license=CC-BY-4.0",
+    "Strings externalized for i18n (translation-ready)"
+  ],
+  "resources": [
+    "PLAN.md",
+    "CLAUDE.md",
+    "tasks/financial-literacy-open-policy-001.json",
+    "tasks/financial-literacy-open-linter-003.json",
+    "tasks/financial-literacy-open-sources-006.json"
+  ],
+  "output": "A reviewed, signed-off Budgeting-basics module (content/lessons/budgeting-basics.mdx) with full provenance metadata, linter-clean, accessible, plain-language, and translation-ready — the M1 proof-of-pipeline.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

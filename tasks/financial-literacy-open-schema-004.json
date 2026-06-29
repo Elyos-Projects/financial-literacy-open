@@ -1,0 +1,34 @@
+{
+  "id": "financial-literacy-open-schema-004",
+  "title": "Content/lesson + glossary JSON Schema (sources[], reviewer sign-off, lastVerified/validUntil, jurisdiction, license)",
+  "project": "financial-literacy-open",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "financial-literacy", "oer", "engineering", "schema", "provenance"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Every lesson and glossary entry in the curriculum must carry structured provenance metadata: citations to authoritative open sources with reuse terms verified, a reviewer sign-off scoped to the current version, staleness fields (lastVerified/validUntil), jurisdiction labeling, and an explicit not-advice framing flag. A JSON Schema enforces these requirements at authoring time, preventing any lesson from shipping without a source or current-version sign-off. This schema is the machine-readable contract that the staleness check (task 009) and CI validate against.",
+  "objective": "Define and publish a JSON Schema for lesson and glossary frontmatter that requires sources[], a current-version reviewer sign-off, lastVerified/validUntil staleness fields, jurisdiction labeling, readingLevel, and notAdviceFraming:true — and fails validation for any lesson missing a source or sign-off.",
+  "acceptanceCriteria": [
+    "Schema requires sources[] with at minimum: citation, url, license/legal-status note, lastVerified (ISO date), and validUntil (ISO date) per source",
+    "Schema requires reviewer, reviewedVersion, and signoffDate fields; a lesson without a current-version sign-off fails schema validation",
+    "Schema requires jurisdiction field with 'neutral' or a valid ISO country code, and readingLevel, plainLanguageChecked, a11yChecked, and notAdviceFraming:true",
+    "Schema requires license field (MIT for code, CC-BY-4.0 or CC-BY-SA-4.0 for content); CC-BY-SA sources are tagged for inheritance",
+    "Schema validation runs in CI via `pnpm build` or a dedicated `pnpm validate:schema` script",
+    "Example valid and invalid frontmatter fixtures are included and tested",
+    "Schema is documented in schema/README or inline with comments explaining each required field"
+  ],
+  "resources": [
+    "PLAN.md",
+    "CLAUDE.md",
+    "tasks/financial-literacy-open-repo-002.json"
+  ],
+  "output": "A merged PR adding the content/lesson and glossary JSON Schema (schema/lesson.schema.json and schema/glossary.schema.json) with CI validation, fixture tests, and documentation.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

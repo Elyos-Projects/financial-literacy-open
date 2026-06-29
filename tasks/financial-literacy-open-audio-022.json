@@ -1,0 +1,36 @@
+{
+  "id": "financial-literacy-open-audio-022",
+  "title": "Read-aloud audio narration of core lessons (low-literacy access)",
+  "project": "financial-literacy-open",
+  "type": "data",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["education", "financial-literacy", "oer", "accessibility", "audio", "low-literacy"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Audio narration of the core lessons extends access to learners with low literacy, visual impairments, or learning differences who benefit from audio-first content. Text-aligned audio (synchronized with the text) enables follow-along reading. The narration must be reviewed for plain-language quality and carry the same not-advice framing as the text. It is a CC-BY-4.0 licensed dataset derived from the curriculum text. Voice talent or text-to-speech must be selected without endorsing any specific tool or service; the implementation approach is left to the task contributor.",
+  "objective": "Produce and publish text-aligned read-aloud audio narration for all core curriculum lessons (Budgeting, Saving, Debt, Banking, Scams modules + Glossary) as an openly-licensed accessibility dataset.",
+  "acceptanceCriteria": [
+    "Audio narration produced for all five core modules and Glossary v1; text-aligned (timestamps or segment markers match lesson text sections)",
+    "Narration is clear, plain, and reviewed for plain-language quality at or equivalent to the text (no added jargon or advice phrasing)",
+    "Audio files are openly licensed CC-BY-4.0; voice/narrator credited (with consent) in the dataset metadata",
+    "Dataset is structured (e.g., JSON manifest mapping lesson segment to audio file + timestamp) for reuse by educators and other OER projects",
+    "Not-advice framing phrases are present in the audio at the same points as the text; linter-equivalent check on the narration script confirms no advice phrasing added",
+    "Audio quality is sufficient for low-bandwidth streaming and offline download (compressed format documented)"
+  ],
+  "resources": [
+    "PLAN.md",
+    "tasks/financial-literacy-open-content-007.json",
+    "tasks/financial-literacy-open-content-010.json",
+    "tasks/financial-literacy-open-content-011.json",
+    "tasks/financial-literacy-open-content-012.json",
+    "tasks/financial-literacy-open-content-013.json"
+  ],
+  "output": "An openly-licensed read-aloud audio narration dataset (data/audio/) with text-aligned manifests covering the core curriculum modules, ready for integration into the static site and for download as a standalone OER asset.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

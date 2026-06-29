@@ -1,0 +1,33 @@
+{
+  "id": "financial-literacy-open-pilot-018",
+  "title": "Secure delivery partner + steward; deliver to real learners; record anonymous outcomes (comprehension gain + money actions)",
+  "project": "financial-literacy-open",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "financial-literacy", "oer", "delivery", "outcomes", "partnerships"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "This is the project's Definition of Shipped: real learners, reached through a secured partner, demonstrably improve. No delivery partner or steward is yet secured; all prior tasks build toward this. The partner profile is a public library system, adult-education program, community college, nonprofit financial-counseling agency, CDFI, or refugee-resettlement organization. Outcome measurement is anonymous and aggregate: a pre/post comprehension gain target and at least 20 learners reporting a concrete money action. The fallback if no partner is secured by approximately 2027-03-31 is to release the reviewed curriculum to an OER commons as a standing public good.",
+  "objective": "Secure a delivery partner and steward, deliver the pilot curriculum to real learners, and record anonymous aggregate outcomes demonstrating comprehension gain and at least 20 learners taking a concrete money-management action.",
+  "acceptanceCriteria": [
+    "A real delivery partner is secured (library/adult-ed/community-college/nonprofit-counseling/CDFI/resettlement org); steward assigned; verifiedNeed flips to true when completed",
+    "Curriculum delivered to real learners via the partner using the facilitation runbook (task 017); delivery uses the expert-signed-off, linter-clean, accessible, privacy-preserving curriculum",
+    "Anonymous, aggregate pre/post comprehension measurement shows median comprehension gain target achieved (target: +30% absolute across core modules)",
+    "At least 20 learners report at least 1 concrete money-management action (started a budget, opened/started an emergency buffer, made a debt-payoff plan, identified/avoided a scam) via the anonymous money-action survey",
+    "Outcomes are recorded as aggregate, anonymous data — no PII, no individual linkage; outcomes document lodged in governance/",
+    "If no partner is secured by approximately 2027-03-31, the reviewed curriculum is released to an OER commons (e.g., an open courseware/OER repository) as a standing public good, and a governance record documents the decision and continued outreach plan"
+  ],
+  "resources": [
+    "PLAN.md",
+    "tasks/financial-literacy-open-i18n-016.json",
+    "tasks/financial-literacy-open-qa-017.json"
+  ],
+  "output": "A governance document recording: the secured partner, delivery dates, anonymous aggregate outcomes (comprehension gain percentage and count of learners reporting money actions), and any OER-commons release decision — the project-level Definition of Shipped record.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

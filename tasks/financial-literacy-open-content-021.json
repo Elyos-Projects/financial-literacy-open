@@ -1,0 +1,34 @@
+{
+  "id": "financial-literacy-open-content-021",
+  "title": "Extended modules (income basics, insurance concepts, planning concepts) — all neutral, non-advice",
+  "project": "financial-literacy-open",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["education", "financial-literacy", "oer", "income", "insurance", "planning", "accessibility"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "After the core curriculum (M1/M2) is established and piloted, extended modules on income basics, insurance concepts, and planning concepts can deepen the curriculum while staying firmly within the education-not-advice boundary. Insurance concepts and planning concepts are particularly sensitive: they must explain how these work generically without recommending any product, policy, or financial plan. Investment, retirement-allocation, and tax advice remain categorically out of scope. Each extended module follows the same pipeline: source vetting, expert sign-off, linter pass, readability and accessibility review.",
+  "objective": "Draft, cite, review, and expert-sign-off extended curriculum modules on income basics, insurance concepts, and financial-planning concepts — all product-neutral, non-advice, and following the same pipeline as the core modules.",
+  "acceptanceCriteria": [
+    "Income-basics module explains how income works (employment, self-employment, irregular income) in plain language without recommending specific jobs, careers, or income strategies",
+    "Insurance-concepts module explains what insurance is and how it functions generically — without recommending any specific policy, insurer, or coverage level; routes to nonprofit insurance counselors for specific guidance",
+    "Planning-concepts module explains goal-setting and basic financial planning concepts — without investment, retirement-allocation, or tax advice (those remain out of scope); routes to qualified non-commercial professionals for high-stakes decisions",
+    "All modules: all claims cited, linter-clean, readability at or below grade 8, WCAG 2.2 AA, credentialed financial-educator sign-off recorded, strings externalized for i18n",
+    "MDX frontmatter conforms to the content JSON Schema: sources[], jurisdiction='neutral', notAdviceFraming:true, license=CC-BY-4.0",
+    "Each module stays entirely within the education-not-advice boundary; investment/securities/crypto/forex/tax/legal advice remains categorically out of scope"
+  ],
+  "resources": [
+    "PLAN.md",
+    "tasks/financial-literacy-open-policy-001.json",
+    "tasks/financial-literacy-open-content-007.json",
+    "tasks/financial-literacy-open-staleness-009.json"
+  ],
+  "output": "Reviewed, signed-off extended modules (content/lessons/income-basics.mdx, insurance-concepts.mdx, planning-concepts.mdx) with full provenance metadata, linter-clean, accessible, plain-language, and translation-ready.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

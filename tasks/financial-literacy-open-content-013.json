@@ -1,0 +1,35 @@
+{
+  "id": "financial-literacy-open-content-013",
+  "title": "Recognizing scams & predatory products module (recognize + verify; names no brands)",
+  "project": "financial-literacy-open",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "financial-literacy", "oer", "consumer-protection", "scams", "accessibility", "plain-language"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Learners with limited financial experience are disproportionately targeted by predatory financial products and scams — payday loans, rent-to-own, MLM, 'credit-repair', advance-fee scams, and other schemes. This module must teach red flags and verification steps (how to check a claim or entity via public/nonprofit resources) without naming specific brands or products. The 'recognize and verify' approach is more durable than brand-specific warnings because new predatory products emerge constantly. The module is gated on the Budgeting module being complete and a credentialed reviewer being engaged.",
+  "objective": "Draft, cite, plain-language review, accessibility review, linter-clean, and credentialed-expert-sign-off the Recognizing scams and predatory products module teaching red flags and verification steps by category — without naming specific brands or products.",
+  "acceptanceCriteria": [
+    "Teaches red flags for predatory product categories (payday/high-cost lending, rent-to-own, MLM, 'credit-repair', debt-settlement, advance-fee/phishing scams) by describing category tactics — not naming specific brands or companies",
+    "Teaches concrete verification steps using public/nonprofit resources (e.g., government consumer-finance agency complaint databases, nonprofit financial counselor referrals) — never routing to commercial 'scam checker' products",
+    "All factual and numeric claims cited to vetted openly-licensed authoritative sources; jurisdiction-specific consumer-protection details labeled by jurisdiction",
+    "Linter-clean: no product/brand names, no affiliate patterns; 'Educational information, not financial advice' framing and non-commercial redirect present",
+    "Readability at or below grade 8; plain-language review passed; WCAG 2.2 AA met; a11y review passed",
+    "MDX frontmatter conforms to the content JSON Schema: sources[], reviewer, reviewedVersion, signoffDate, jurisdiction='neutral', notAdviceFraming:true, license=CC-BY-4.0",
+    "Credentialed financial-educator sign-off and product-neutrality reviewer sign-off recorded for the shipped version; strings externalized for i18n"
+  ],
+  "resources": [
+    "PLAN.md",
+    "tasks/financial-literacy-open-policy-001.json",
+    "tasks/financial-literacy-open-content-007.json",
+    "tasks/financial-literacy-open-staleness-009.json"
+  ],
+  "output": "A reviewed, signed-off Recognizing scams and predatory products module (content/lessons/scams-and-predatory-products.mdx) with full provenance metadata, linter-clean, accessible, plain-language, and translation-ready.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

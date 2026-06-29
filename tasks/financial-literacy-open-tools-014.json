@@ -1,0 +1,36 @@
+{
+  "id": "financial-literacy-open-tools-014",
+  "title": "Client-side-only calculators (budget worksheet, debt-payoff illustrator, savings-goal) + no-data-egress test",
+  "project": "financial-literacy-open",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "financial-literacy", "oer", "privacy", "accessibility", "tools", "engineering"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "The project's strongest privacy guarantee is structural: it never asks for, transmits, or stores a user's personal financial data. The interactive tools (budget worksheet, debt-payoff illustrator, savings-goal calculator) compute entirely in the browser with no backend, no network calls with user data, and no analytics on financial inputs. An optional 'save my numbers' feature is local-device-only, opt-in, and never uploaded. Each tool carries the not-advice framing and an 'illustration, not a recommendation' label. A no-data-egress test (network + storage) is a required release gate for each tool.",
+  "objective": "Build the three privacy-preserving, client-side-only interactive calculators (budget worksheet, debt-payoff illustrator, savings-goal calculator) with a passing no-data-egress test for each, not-advice framing, and WCAG 2.2 AA accessibility.",
+  "acceptanceCriteria": [
+    "Budget worksheet: client-side-only income/expense calculation with labeled illustrative examples; no data transmitted or persisted server-side",
+    "Debt-payoff illustrator: shows illustrative payoff timelines (e.g., snowball vs. avalanche approaches) labeled as 'illustration, not a recommendation'; no data transmitted or persisted server-side",
+    "Savings-goal calculator: client-side-only savings timeline calculator; no data transmitted or persisted server-side",
+    "Optional 'save my numbers' is local-device-only (localStorage/IndexedDB), requires explicit opt-in, is clearly labeled as staying on the device, and is never uploaded",
+    "No-data-egress test (network + storage) passes for each tool as a release gate: asserts no financial input is sent over the network and no financial data is written to storage without explicit opt-in",
+    "Each tool carries 'Educational information, not financial advice' framing and an 'illustration, not a recommendation' label; linter-clean",
+    "WCAG 2.2 AA accessibility requirements met; keyboard navigable; screen-reader friendly"
+  ],
+  "resources": [
+    "PLAN.md",
+    "tasks/financial-literacy-open-policy-001.json",
+    "tasks/financial-literacy-open-linter-003.json",
+    "tasks/financial-literacy-open-content-010.json",
+    "tasks/financial-literacy-open-content-011.json"
+  ],
+  "output": "A merged PR adding the three client-side-only calculators (tools/) with no-data-egress tests, not-advice framing, accessibility compliance, and documentation of the privacy-by-construction design.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

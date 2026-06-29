@@ -1,0 +1,34 @@
+{
+  "id": "financial-literacy-open-qa-017",
+  "title": "QA/eval suite + pilot readiness: linter + citation-coverage + staleness + WCAG 2.2 AA + readability + anonymous pre/post instrument + facilitation runbook",
+  "project": "financial-literacy-open",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["education", "financial-literacy", "oer", "engineering", "qa", "accessibility", "evaluation"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Before the curriculum can be delivered to real learners through a partner, all quality gates must be running green in CI and the measurement instruments must be ready. This task assembles the complete QA/eval suite: the product-neutrality linter, citation-coverage check, staleness check, WCAG 2.2 AA audit, readability scorer, and the anonymous pre/post comprehension instrument and money-action survey that will measure learner outcomes. The facilitation runbook documents how the partner's facilitators deliver the curriculum and administer the measurement instruments without PII.",
+  "objective": "Assemble and verify the complete QA/eval suite running green in CI, and build the anonymous pre/post comprehension instrument, money-action survey, and facilitator runbook needed to make the curriculum partner-ready for pilot delivery.",
+  "acceptanceCriteria": [
+    "Full QA suite runs green in CI: product-neutrality linter, citation-coverage check, staleness fail-safe, WCAG 2.2 AA audit, and automated readability scorer (grade-level target verified)",
+    "Anonymous, no-PII pre/post comprehension instrument: short quiz covering core module concepts, partner-administrable, with no personally-identifying information collected or stored; aggregate results only",
+    "Anonymous money-action survey: captures whether learners took a concrete money-management action (started a budget, opened/started an emergency buffer, made a debt-payoff plan, identified/avoided a scam) — no PII, no individual linkage",
+    "Facilitation runbook: documents how a partner facilitator delivers the curriculum, administers the instruments, and returns aggregate anonymous results — no PII at any step",
+    "Pilot-readiness checklist: all prerequisite tasks complete (curriculum modules expert-signed-off, linter-clean, accessible, translations reviewed, tools privacy-tested)",
+    "QA suite is documented and runnable locally; each check produces actionable output"
+  ],
+  "resources": [
+    "PLAN.md",
+    "tasks/financial-literacy-open-linter-003.json",
+    "tasks/financial-literacy-open-staleness-009.json",
+    "tasks/financial-literacy-open-tools-014.json"
+  ],
+  "output": "A merged PR adding the complete QA/eval suite (scripts/qa/), the anonymous pre/post comprehension instrument and money-action survey, and the facilitator runbook — all wired into CI and documented for partner use.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}
