@@ -1,0 +1,36 @@
+{
+  "id": "financial-literacy-open-policy-001",
+  "title": "Editorial / product-neutrality / not-advice policy charter (refused-use set, non-commercial redirect, non-shaming, jurisdiction-honesty)",
+  "project": "financial-literacy-open",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "financial-literacy", "oer", "consumer-protection", "accessibility"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Financial-Literacy-Open is an openly-licensed, plain-language curriculum + privacy-preserving toolkit teaching budgeting, saving, and debt basics. It is EDUCATION, NOT financial advice, and is strictly product-neutral: it never recommends a financial product/brand/institution, never carries affiliate or lead-gen links, and never gives individualized advice. Most 'financial literacy' content online is really lead-generation, so commercial disinterest is this project's trust moat and a hard product requirement. This is the cold-start task that writes the editorial/product-neutrality/not-advice charter that all later content, tooling, and the automated linter must implement and be tested against. This is a MEDIUM risk-tier project; no delivery partner or credentialed financial-educator reviewer is yet secured.",
+  "objective": "Write the authoritative editorial / product-neutrality / not-advice policy charter that all later content and code must implement and be tested against: the education-vs-advice line, the concrete refused-use set, the non-commercial redirect rule, the persistent 'educational, not financial advice' framing, the non-shaming / structurally-honest editorial rules, the jurisdiction-honesty rule (neutral core; labeled, locally-reviewed overlays), and the credentialed-expert sign-off gate.",
+  "acceptanceCriteria": [
+    "Enumerates the refused-use set in concrete, testable terms: individualized financial advice ('what should I do with my money'); investment/securities/crypto/forex/retirement-allocation advice and ticker/fund picks; naming or ranking specific products, brands, or institutions; affiliate/referral/lead-gen/sponsored content; tax/legal/accounting/insurance/bankruptcy advice; get-rich-quick / day-trading / MLM / gambling / 'credit-repair' / debt-settlement schemes; and collecting users' personal financial data",
+    "Defines the allowed educational categories and the education-vs-advice line in plain terms",
+    "Mandates the non-commercial redirect on refusals (free nonprofit counselor / public consumer-finance agency + the relevant lesson - never a product) and the persistent 'educational, not financial advice' framing on every learner-facing surface",
+    "Defines the non-shaming / structurally-honest editorial rules: no blame or moralizing of poverty or debt, never imply hardship is a personal failing, never promise budgeting alone fixes structural problems, and route people in distress to free non-commercial help",
+    "Defines the jurisdiction-honesty rule: a jurisdiction-neutral core with figures shown as labeled illustrative examples, and country-specific claims only inside a clearly-labeled, locally-reviewed overlay - never presented as universal",
+    "Specifies that these rules are enforced by an automated product-neutrality/not-advice linter (a CI gate) AND credentialed expert review, not by a disclaimer footer, and defines what the linter must detect",
+    "Reviewed and signed off by a credentialed financial educator (AFC or equivalent) and the product-neutrality reviewer, recorded in the reviewers ledger (version-scoped)"
+  ],
+  "resources": [
+    "planning/projects/financial-literacy-open/PLAN.md",
+    "CLAUDE.md",
+    "docs/good-deed-definition.md",
+    "packages/schema/src/schemas.ts",
+    "planning/projects/public-official-guide/PLAN.md"
+  ],
+  "output": "A reviewed policy-charter document (the editorial / product-neutrality / not-advice charter) defining the education-vs-advice line, the refused-use set, the non-commercial-redirect rule, the not-advice framing, the non-shaming and jurisdiction-honesty rules, and the linter + expert-review gates - the contract that financial-literacy-open-linter-003 (linter) and all content tasks implement and are verified against.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}
